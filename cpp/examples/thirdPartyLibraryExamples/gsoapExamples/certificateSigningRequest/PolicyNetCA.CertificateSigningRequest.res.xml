@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+ xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xop="http://www.w3.org/2004/08/xop/include"
+ xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+ xmlns:policynet="urn:policynet/0.0.0">
+ <SOAP-ENV:Header>
+  <policynet:LoginUsername></policynet:LoginUsername>
+ </SOAP-ENV:Header>
+ <SOAP-ENV:Body>
+  <policynet:CertificateSigningResponse>
+   <policynet:Status>
+    <policynet:Status>Accepted</policynet:Status>
+    <policynet:FailureInfo>badAlg</policynet:FailureInfo>
+   </policynet:Status>
+   <policynet:ConfirmWaitTime></policynet:ConfirmWaitTime>
+   <policynet:POP>
+    <policynet:IV SOAP-ENC:arrayType="xsd:unsignedByte[16]">
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+     <item>0</item>
+    </policynet:IV>
+    <policynet:EncryptedSecretKey xmime5:contentType="">
+     <xop:Include></xop:Include>
+    </policynet:EncryptedSecretKey>
+    <policynet:EncryptedData xmime5:contentType="">
+     <xop:Include></xop:Include>
+    </policynet:EncryptedData>
+   </policynet:POP>
+  </policynet:CertificateSigningResponse>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

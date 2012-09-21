@@ -1,0 +1,58 @@
+# Top level includes and lib includes 
+project top 
+  : requirements <source>/apps/free/systemc/systemc-2.1.1/lib-linux/libsystemc.a 
+    <source>/apps/free/it++/itpp-3.10.0/usrlocal/lib/libitpp.a
+    <source>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libfftw3.so 
+    <source>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libcblas.so 
+    <source>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libblas.so 
+    <source>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/liblapack.so 
+    <source>/apps/matlab/7.1.0_R14-SP3/bin/glnx86/libmat.so 
+    <source>/apps/matlab/7.1.0_R14-SP3/bin/glnx86/libmx.so
+    <source>/apps/matlab/7.1.0_R14-SP3/bin/glnx86/libut.so
+    <source>/apps/free/boost/boost-1.33.1/lib/libboost_signals-gcc-1_33_1.a
+    <source>/apps/free/boost/boost-1.33.1/lib/libboost_filesystem-gcc-1_33_1.a
+    <include>/apps/free/it++/itpp-3.10.0/usrlocal/include 
+    <include>/apps/free/systemc/systemc-2.1.1/include 
+    <include>/apps/matlab/7.1.0_R14-SP3/extern/include 
+    <include>/apps/free/tclap/tclap-1.0.5/include 
+    <include>/apps/free/boost/boost-1.33.1
+    <include>/vobs/sv_system_modeling/uwbModel/sysc_src
+    <source>/vobs/sv_system_modeling/uwbModel/sysc_src/utilities/stringUtilities.cpp
+    <source>/vobs/sv_system_modeling/uwbModel/sysc_src/utilities/uwbUtilities.cpp
+    <source>/vobs/sv_system_modeling/uwbModel/sysc_src/modem/ModemRateParameters.cpp
+    <source>/vobs/sv_system_modeling/uwbModel/sysc_src/modem/InterleaverRateParameters.cpp
+    <source>/vobs/sv_system_modeling/uwbModel/sysc_src/modem/ConvolutionalEncoderParameters.cpp
+    <source>/vobs/sv_system_modeling/uwbModel/sysc_src/utilities/Subject.cpp
+
+  : usage-requirements <source>/apps/free/systemc/systemc-2.1.1/lib-linux/libsystemc.a 
+    <source>/apps/free/it++/itpp-3.10.0/usrlocal/lib/libitpp.a
+    <source>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libfftw3.so 
+    <source>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libcblas.so 
+    <source>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libblas.so 
+    <source>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/liblapack.so 
+    <source>/apps/matlab/7.1.0_R14-SP3/bin/glnx86/libmat.so 
+    <source>/apps/matlab/7.1.0_R14-SP3/bin/glnx86/libmx.so
+    <source>/apps/free/boost/boost-1.33.1/lib/libboost_filesystem-gcc-1_33_1.a
+    <source>/apps/matlab/7.1.0_R14-SP3/bin/glnx86/libut.so
+    <source>/apps/free/boost/boost-1.33.1/lib/libboost_signals-gcc-1_33_1.a
+    <include>/apps/free/it++/itpp-3.10.0/usrlocal/include 
+    <include>/apps/free/systemc/systemc-2.1.1/include 
+    <include>/apps/matlab/7.1.0_R14-SP3/extern/include 
+    <include>/apps/free/tclap/tclap-1.0.5/include 
+    <include>/apps/free/boost/boost-1.33.1
+    <include>/vobs/sv_system_modeling/uwbModel/sysc_src
+    <source>/vobs/sv_system_modeling/uwbModel/sysc_src/utilities/stringUtilities.cpp
+    <source>/vobs/sv_system_modeling/uwbModel/sysc_src/utilities/uwbUtilities.cpp
+    <source>/vobs/sv_system_modeling/uwbModel/sysc_src/utilities/Subject.cpp
+  ;
+# Executable target
+lib frtbegin : : <name>frtbegin ;
+lib g2c : : <name>g2c ;
+lib gcc_s : : <name>gcc_s ;
+
+exe run.x  
+  : boostFileSystemExample.cpp
+    frtbegin 
+    g2c 
+    gcc_s
+  ;

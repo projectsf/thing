@@ -1,0 +1,8 @@
+exe run.x 
+  : boostSignalsExample.cpp /apps/free/boost/boost-1.33.1/lib/libboost_signals-gcc-mt-1_33_1.a
+  : <include>/apps/free/boost/boost-1.33.1 <threading>multi
+  ;
+
+install dist
+  : run.x
+  : <location>./ <install-type>EXE ;

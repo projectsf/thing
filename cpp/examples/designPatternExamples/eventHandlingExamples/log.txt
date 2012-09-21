@@ -1,0 +1,394 @@
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementOne' was added with the following parameters: 
+	Start = 2007:11:14T16:12:46, End = 2007:11:14T16:13:6 and Freq = 2
+	CurrentTime is: 2007:11:14T16:12:36
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementTwo' was added with the following parameters: 
+	Start = 2007:11:14T16:12:56, End = 2007:11:14T16:13:6 and Freq = 1
+	CurrentTime is: 2007:11:14T16:12:36
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:36
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:37
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:38
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:39
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:40
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:41
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:42
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:43
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:44
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:45
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Removing and running top element in PolicyEnforcement Container ...
+PolicyEnforcement::run() -- 'PolicyEnforcementOne' running at: 2007:11:14T16:12:46
+PolicyEnforcement::update() -- 'PolicyEnforcementOne' resubmitting policy with new start time: 2007:11:14T16:12:48
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementOne' was added with the following parameters: 
+	Start = 2007:11:14T16:12:48, End = 2007:11:14T16:13:6 and Freq = 2
+	CurrentTime is: 2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:48
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:46
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:48
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:47
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:48
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:48
+PolicyEnforcementEngine::run() - Removing and running top element in PolicyEnforcement Container ...
+PolicyEnforcement::run() -- 'PolicyEnforcementOne' running at: 2007:11:14T16:12:48
+PolicyEnforcement::update() -- 'PolicyEnforcementOne' resubmitting policy with new start time: 2007:11:14T16:12:50
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementOne' was added with the following parameters: 
+	Start = 2007:11:14T16:12:50, End = 2007:11:14T16:13:6 and Freq = 2
+	CurrentTime is: 2007:11:14T16:12:48
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:50
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:48
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:50
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:49
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:50
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:50
+PolicyEnforcementEngine::run() - Removing and running top element in PolicyEnforcement Container ...
+PolicyEnforcement::run() -- 'PolicyEnforcementOne' running at: 2007:11:14T16:12:50
+PolicyEnforcement::update() -- 'PolicyEnforcementOne' resubmitting policy with new start time: 2007:11:14T16:12:52
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementOne' was added with the following parameters: 
+	Start = 2007:11:14T16:12:52, End = 2007:11:14T16:13:6 and Freq = 2
+	CurrentTime is: 2007:11:14T16:12:50
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:52
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:50
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:52
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:51
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:52
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:52
+PolicyEnforcementEngine::run() - Removing and running top element in PolicyEnforcement Container ...
+PolicyEnforcement::run() -- 'PolicyEnforcementOne' running at: 2007:11:14T16:12:52
+PolicyEnforcement::update() -- 'PolicyEnforcementOne' resubmitting policy with new start time: 2007:11:14T16:12:54
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementOne' was added with the following parameters: 
+	Start = 2007:11:14T16:12:54, End = 2007:11:14T16:13:6 and Freq = 2
+	CurrentTime is: 2007:11:14T16:12:52
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:54
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:52
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:54
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:53
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:54
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:54
+PolicyEnforcementEngine::run() - Removing and running top element in PolicyEnforcement Container ...
+PolicyEnforcement::run() -- 'PolicyEnforcementOne' running at: 2007:11:14T16:12:54
+PolicyEnforcement::update() -- 'PolicyEnforcementOne' resubmitting policy with new start time: 2007:11:14T16:12:56
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementOne' was added with the following parameters: 
+	Start = 2007:11:14T16:12:56, End = 2007:11:14T16:13:6 and Freq = 2
+	CurrentTime is: 2007:11:14T16:12:54
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementTwo' has start time = 2007:11:14T16:12:56
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:54
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementTwo' has start time = 2007:11:14T16:12:56
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:55
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementTwo' has start time = 2007:11:14T16:12:56
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:56
+PolicyEnforcementEngine::run() - Removing and running top element in PolicyEnforcement Container ...
+PolicyEnforcement::run() -- 'PolicyEnforcementTwo' running at: 2007:11:14T16:12:56
+PolicyEnforcement::update() -- 'PolicyEnforcementTwo' resubmitting policy with new start time: 2007:11:14T16:12:57
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementTwo' was added with the following parameters: 
+	Start = 2007:11:14T16:12:57, End = 2007:11:14T16:13:6 and Freq = 1
+	CurrentTime is: 2007:11:14T16:12:56
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:56
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:56
+PolicyEnforcementEngine::run() - Removing and running top element in PolicyEnforcement Container ...
+PolicyEnforcement::run() -- 'PolicyEnforcementOne' running at: 2007:11:14T16:12:56
+PolicyEnforcement::update() -- 'PolicyEnforcementOne' resubmitting policy with new start time: 2007:11:14T16:12:58
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementOne' was added with the following parameters: 
+	Start = 2007:11:14T16:12:58, End = 2007:11:14T16:13:6 and Freq = 2
+	CurrentTime is: 2007:11:14T16:12:56
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementTwo' has start time = 2007:11:14T16:12:57
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:56
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementTwo' has start time = 2007:11:14T16:12:57
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:57
+PolicyEnforcementEngine::run() - Removing and running top element in PolicyEnforcement Container ...
+PolicyEnforcement::run() -- 'PolicyEnforcementTwo' running at: 2007:11:14T16:12:57
+PolicyEnforcement::update() -- 'PolicyEnforcementTwo' resubmitting policy with new start time: 2007:11:14T16:12:58
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementTwo' was added with the following parameters: 
+	Start = 2007:11:14T16:12:58, End = 2007:11:14T16:13:6 and Freq = 1
+	CurrentTime is: 2007:11:14T16:12:57
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:58
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:57
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:58
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:58
+PolicyEnforcementEngine::run() - Removing and running top element in PolicyEnforcement Container ...
+PolicyEnforcement::run() -- 'PolicyEnforcementOne' running at: 2007:11:14T16:12:58
+PolicyEnforcement::update() -- 'PolicyEnforcementOne' resubmitting policy with new start time: 2007:11:14T16:12:60
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementOne' was added with the following parameters: 
+	Start = 2007:11:14T16:12:60, End = 2007:11:14T16:13:6 and Freq = 2
+	CurrentTime is: 2007:11:14T16:12:58
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementTwo' has start time = 2007:11:14T16:12:58
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:58
+PolicyEnforcementEngine::run() - Removing and running top element in PolicyEnforcement Container ...
+PolicyEnforcement::run() -- 'PolicyEnforcementTwo' running at: 2007:11:14T16:12:58
+PolicyEnforcement::update() -- 'PolicyEnforcementTwo' resubmitting policy with new start time: 2007:11:14T16:12:59
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementTwo' was added with the following parameters: 
+	Start = 2007:11:14T16:12:59, End = 2007:11:14T16:13:6 and Freq = 1
+	CurrentTime is: 2007:11:14T16:12:58
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementTwo' has start time = 2007:11:14T16:12:59
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:58
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementTwo' has start time = 2007:11:14T16:12:59
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:59
+PolicyEnforcementEngine::run() - Removing and running top element in PolicyEnforcement Container ...
+PolicyEnforcement::run() -- 'PolicyEnforcementTwo' running at: 2007:11:14T16:12:59
+PolicyEnforcement::update() -- 'PolicyEnforcementTwo' resubmitting policy with new start time: 2007:11:14T16:12:60
+PolicyEnforcementEngine::add() - A PolicyEnforcement 'PolicyEnforcementTwo' was added with the following parameters: 
+	Start = 2007:11:14T16:12:60, End = 2007:11:14T16:13:6 and Freq = 1
+	CurrentTime is: 2007:11:14T16:12:59
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:12:59
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:0
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:1
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:2
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:3
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:4
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:5
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:6
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:7
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:8
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:9
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:10
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:11
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:12
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:13
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:14
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:15
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:16
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:17
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:18
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:19
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:20
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:21
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:22
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:23
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:24
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:25
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:26
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:27
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:28
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:29
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:30
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:31
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:32
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:33
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:34
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:35
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:36
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:37
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:38
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:39
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:40
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:41
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:42
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:43
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:44
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:46
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:47
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:48
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:49
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:50
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:51
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:52
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:53
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:54
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:55
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:56
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:57
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:58
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:13:59
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:0
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:1
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:2
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:3
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:4
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:5
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:6
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:7
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:8
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:9
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:10
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:11
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:12
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:13
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:14
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:15
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...
+PolicyEnforcementEngine::run() - First element: 'PolicyEnforcementOne' has start time = 2007:11:14T16:12:60
+PolicyEnforcementEngine::run() - Current time: '2007:11:14T16:14:16
+PolicyEnforcementEngine::run() - Waiting to run next PolicyEnforcement ...

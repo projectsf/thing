@@ -1,0 +1,9 @@
+exe run.x 
+  : boostSignalsExample.cpp
+    /home/a0871095/opteronPort/boost/boost_1_33_1/lib/libboost_signals-gcc-1_33_1.a
+  : <include>home/a0871095/opteronPort/boost/boost_1_33_1/include
+  ; 
+
+install dist
+  : run.x
+  : <location>./ <install-type>EXE ;

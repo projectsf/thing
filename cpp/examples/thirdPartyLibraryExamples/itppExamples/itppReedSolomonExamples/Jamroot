@@ -1,0 +1,15 @@
+lib m : : <name>m  ;
+lib frtbegin : : <name>frtbegin ;
+lib g2c : : <name>g2c ;
+lib gcc_s : : <name>gcc_s ;
+lib fftw3 : : <file>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libfftw3.a <link>static ;
+lib cblas : : <file>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libcblas.a <link>static ;
+lib blas : : <file>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libblas.a <link>static ;
+lib lapack : m frtbegin g2c gcc_s : <file>/apps/free/it++/itpp-external-2.1.1/usrlocal/lib/liblapack.a <link>static ;
+lib itpp : fftw3 cblas blas lapack : <file>/apps/free/it++/itpp-3.10.0/usrlocal/lib/libitpp.a <link>static ;
+
+
+exe run.x
+  : itppReedSolomonExample.cpp itpp fftw3 cblas blas lapack
+  : <include>/apps/free/it++/itpp-3.10.0/usrlocal/include
+  ;

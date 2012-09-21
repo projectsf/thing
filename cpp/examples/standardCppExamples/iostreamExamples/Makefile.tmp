@@ -1,0 +1,15 @@
+SOURCES=./main.cpp
+OUTPUTNAME=./run.x
+LIBS=-lpthread
+BOOST_INC=/devel/trees/gen1/trunk/host/usr/include/boost-1_33_1
+BOOST_LIB=/devel/trees/gen1/trunk/host/usr/lib
+SWITCHES=-Wall -Wno-comment -g
+
+
+$(OUTPUTNAME): $(SOURCES) 
+	g++ -o $(OUTPUTNAME) $(SOURCES) $(LIBS) -I$(BOOST_INC) -L$(BOOST_LIB) $(SWITCHES) 
+
+clean:
+	rm -f run.x
+
+.PHONY=clean

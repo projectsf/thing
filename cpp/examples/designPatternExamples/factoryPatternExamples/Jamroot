@@ -1,0 +1,4 @@
+exe run.x 
+  : factoryPatternExample.cpp Base.cpp DerivedOne.cpp DerivedTwo.cpp Factory.cpp
+  : <include>/apps/free/boost/boost-1.33.1
+  ;

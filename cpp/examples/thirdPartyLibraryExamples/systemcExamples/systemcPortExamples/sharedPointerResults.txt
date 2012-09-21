@@ -1,0 +1,41 @@
+
+             SystemC 2.1.v1 --- Jan 19 2006 14:13:11
+        Copyright (c) 1996-2005 by all Contributors
+                    ALL RIGHTS RESERVED
+Calling non-empty constructor
+
+Warning: (W116) channel doesn't have a default event
+In file: ../../../../src/sysc/communication/sc_interface.cpp:63
+ModuleOne execute()
+ModuleOne execute()
+ModuleTwo execute(), read: 1
+ModuleOne execute()
+ModuleTwo execute(), read: 2
+ModuleOne execute()
+ModuleTwo execute(), read: 3
+ModuleOne execute()
+ModuleTwo execute(), read: 4
+ModuleOne execute()
+ModuleTwo execute(), read: 5
+ModuleOne execute()
+ModuleTwo execute(), read: 6
+ModuleOne execute()
+ModuleTwo execute(), read: 7
+ModuleOne execute()
+ModuleTwo execute(), read: 8
+ModuleOne execute()
+ModuleTwo execute(), read: 9
+ModuleOne execute()
+ModuleTwo execute(), read: 10
+ModuleOne execute()
+ModuleTwo execute(), read: 11
+ModuleOne execute()
+ModuleTwo execute(), read: 12
+ModuleOne execute()
+ModuleTwo execute(), read: 13
+ModuleOne execute()
+ModuleTwo execute(), read: 14
+ModuleOne execute()
+ModuleTwo execute(), read: 15
+ModuleTwo execute(), read: 15
+Calling destructor

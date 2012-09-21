@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="PracticeCode.cdt.managedbuild.target.gnu.cygwin.exe.768209701" name="Executable (Gnu on Windows)" projectType="cdt.managedbuild.target.gnu.cygwin.exe">
+<configuration artifactExtension="exe" artifactName="PracticeCode" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.cygwin.exe.debug.1528634732" name="Debug" parent="cdt.managedbuild.config.gnu.cygwin.exe.debug">
+<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.exe.debug.1814808388" name="GCC Tool Chain" superClass="cdt.managedbuild.toolchain.gnu.cygwin.exe.debug">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug">
+<option id="gnu.cpp.compiler.option.preprocessor.def.434575754" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="SC_INCLUDE_FX"/>
+</option>
+<option id="gnu.cpp.compiler.option.include.paths.519430567" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;C:\tools\boost\boost_1_33_1&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\tools\SystemC\systemc-2.1.v1\include&quot;"/>
+</option>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.742932344" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug">
+<option id="gnu.c.compiler.option.warnings.pedantic.273443677" superClass="gnu.c.compiler.option.warnings.pedantic" value="true" valueType="boolean"/>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.debug.1602071175" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.debug"/>
+<tool id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.debug.1103410026" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.debug">
+<option id="gnu.cpp.link.option.libs.2086481680" superClass="gnu.cpp.link.option.libs" valueType="libs">
+<listOptionValue builtIn="false" value="systemc"/>
+</option>
+<option id="gnu.cpp.link.option.paths.861083476" superClass="gnu.cpp.link.option.paths" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;C:\Boost\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\tools\SystemC\systemc-2.1.v1\lib-cygwin&quot;"/>
+</option>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.debug.1518421045" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.debug"/>
+<macros/>
+</toolChain>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.debug.1528634732./PracticeCode/SystemcExample.cpp" name="SystemcExample.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/SystemcExample.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769./PracticeCode/SystemcExample.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769./PracticeCode/SystemcExample.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.debug.1528634732./PracticeCode/PointerToFunctor.cpp" name="PointerToFunctor.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/PointerToFunctor.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769./PracticeCode/PointerToFunctor.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769./PracticeCode/PointerToFunctor.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.debug.1528634732./PracticeCode/boostThreadsExample.cpp" name="boostThreadsExample.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/boostThreadsExample.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769./PracticeCode/boostThreadsExample.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769./PracticeCode/boostThreadsExample.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.debug.1528634732./PracticeCode/BoostSlots.cpp" name="BoostSlots.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/BoostSlots.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769./PracticeCode/BoostSlots.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769./PracticeCode/BoostSlots.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.debug.1528634732./PracticeCode/InnerProduct.cpp" name="InnerProduct.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/InnerProduct.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769./PracticeCode/InnerProduct.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769./PracticeCode/InnerProduct.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.262056769"/>
+</resourceConfiguration>
+</configuration>
+<configuration artifactExtension="exe" artifactName="PracticeCode" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706" name="Release" parent="cdt.managedbuild.config.gnu.cygwin.exe.release">
+<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.exe.release.1234765391" name="GCC Tool Chain" superClass="cdt.managedbuild.toolchain.gnu.cygwin.exe.release">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release">
+<option id="gnu.cpp.compiler.option.include.paths.1557836592" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;C:\tools\boost\boost_1_33_1&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\tools\SystemC\systemc-2.1.v1\include&quot;"/>
+</option>
+<option id="gnu.cpp.compiler.option.preprocessor.def.421910962" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="SC_INCLUDE_FX"/>
+</option>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.890984361" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release"/>
+<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.release.295766390" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.release"/>
+<tool id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.release.1333005972" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.release">
+<option id="gnu.cpp.link.option.paths.1838853323" superClass="gnu.cpp.link.option.paths" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;C:\Boost\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\tools\SystemC\systemc-2.1.v1\lib-cygwin&quot;"/>
+</option>
+<option id="gnu.cpp.link.option.libs.1615957709" superClass="gnu.cpp.link.option.libs" valueType="libs">
+<listOptionValue builtIn="false" value="libboost_signals-gcc-1_33_1"/>
+<listOptionValue builtIn="false" value="libboost_thread-gcc-mt-1_33_1"/>
+<listOptionValue builtIn="false" value="systemc"/>
+</option>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.release.1671531060" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.release"/>
+<macros/>
+</toolChain>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706./PracticeCode/PointerToFunctor.cpp" name="PointerToFunctor.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/PointerToFunctor.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/PointerToFunctor.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/PointerToFunctor.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706./PracticeCode/InnerProduct.cpp" name="InnerProduct.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/InnerProduct.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/InnerProduct.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/InnerProduct.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706./PracticeCode/BoostSlots.cpp" name="BoostSlots.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/BoostSlots.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/BoostSlots.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/BoostSlots.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706./PracticeCode/SystemcExample.cpp" name="SystemcExample.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/SystemcExample.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/SystemcExample.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/SystemcExample.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706./PracticeCode/boostThreadsExample.cpp" name="boostThreadsExample.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/boostThreadsExample.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/boostThreadsExample.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/boostThreadsExample.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706./PracticeCode/sqnrAnalysis.cpp" name="sqnrAnalysis.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/sqnrAnalysis.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/sqnrAnalysis.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/sqnrAnalysis.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706./PracticeCode/boostAssign.cpp" name="boostAssign.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/boostAssign.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/boostAssign.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/boostAssign.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706./PracticeCode/LinkedList.cpp" name="LinkedList.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/LinkedList.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/LinkedList.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/LinkedList.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706./PracticeCode/BinarySearchTree.cpp" name="BinarySearchTree.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/BinarySearchTree.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/BinarySearchTree.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/BinarySearchTree.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706./PracticeCode/cFunctionPointer.cpp" name="cFunctionPointer.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/cFunctionPointer.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/cFunctionPointer.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/cFunctionPointer.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="cdt.managedbuild.config.gnu.cygwin.exe.release.1732244706./PracticeCode/bstWithList.cpp" name="bstWithList.cpp" rcbsApplicability="disable" resourcePath="/PracticeCode/bstWithList.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/bstWithList.cpp">
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399./PracticeCode/bstWithList.cpp" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1596280399"/>
+</resourceConfiguration>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>

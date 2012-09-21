@@ -1,0 +1,1 @@
+g++ -o ./run.x ./fixedPointFromFileExample.cpp  -I/apps/free/systemc/systemc-2.1.1/include -Wall -DSC_INCLUDE_FX -L/apps/free/systemc/systemc-2.1.1/lib-linux  -lsystemc | c++filt 

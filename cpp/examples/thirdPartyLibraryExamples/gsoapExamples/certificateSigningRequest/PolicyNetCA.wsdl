@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="PolicyNetCA"
+ targetNamespace="urn:policynet/0.0.0"
+ xmlns:tns="urn:policynet/0.0.0"
+ xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+ xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:xop="http://www.w3.org/2004/08/xop/include"
+ xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+ xmlns:policynet="urn:policynet/0.0.0"
+ xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap12/"
+ xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/"
+ xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/"
+ xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+ xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+<types>
+
+ <schema targetNamespace="urn:policynet/0.0.0"
+  xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xop="http://www.w3.org/2004/08/xop/include"
+  xmlns:xmime5="http://www.w3.org/2005/05/xmlmime"
+  xmlns:policynet="urn:policynet/0.0.0"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+ <import namespace="http://www.w3.org/2004/08/xop/include" schemaLocation="http://www.w3.org/2004/08/xop/include"/>
+ <import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="http://www.w3.org/2005/05/xmlmime"/>
+ <import namespace="http://www.w3.org/2003/05/soap-encoding" schemaLocation="http://www.w3.org/2003/05/soap-encoding"/>
+
+  <simpleType name="PKCS10">
+   <restriction base="xsd:string">
+   </restriction>
+  </simpleType>
+  <simpleType name="UserName">
+   <restriction base="xsd:string">
+    <pattern value="^[a-zA-Z0-9_]{3,10}$"/>
+   </restriction>
+  </simpleType>
+  <simpleType name="LoginPassword">
+   <restriction base="xsd:string">
+    <pattern value="^[^ ]{8,18}$"/>
+   </restriction>
+  </simpleType>
+  <simpleType name="PKIStatus">
+   <restriction base="xsd:string">
+    <enumeration value="Accepted"/>
+    <enumeration value="GrantedWithMods"/>
+    <enumeration value="Rejection"/>
+    <enumeration value="Waiting"/>
+    <enumeration value="RevocationWarning"/>
+    <enumeration value="RevocationNotification"/>
+   </restriction>
+  </simpleType>
+  <simpleType name="PKIFailureInfo">
+   <restriction base="xsd:string">
+    <enumeration value="badAlg"/>
+    <enumeration value="badMessageCheck"/>
+    <enumeration value="badCertid"/>
+    <enumeration value="badDataFormat"/>
+    <enumeration value="badPOP"/>
+    <enumeration value="certRevoked"/>
+    <enumeration value="certConfirmed"/>
+    <enumeration value="transactionIdInUse"/>
+    <enumeration value="notAuthorized"/>
+    <enumeration value="systemUnavail"/>
+    <enumeration value="systemFailure"/>
+   </restriction>
+  </simpleType>
+  <simpleType name="PNService">
+   <restriction base="xsd:string">
+    <enumeration value="PolicyServer"/>
+    <enumeration value="Webservice"/>
+    <enumeration value="OOB"/>
+    <enumeration value="MDM"/>
+    <enumeration value="RA"/>
+    <enumeration value="CA"/>
+    <enumeration value="AAA"/>
+    <enumeration value="UI"/>
+    <enumeration value="OCSP"/>
+    <enumeration value="DHCP"/>
+    <enumeration value="DeviceFileImport"/>
+    <enumeration value="Database"/>
+    <enumeration value="Device"/>
+   </restriction>
+  </simpleType>
+  <simpleType name="CRLReason">
+   <restriction base="xsd:string">
+    <enumeration value="Unspecified"/>
+    <enumeration value="KeyCompromise"/>
+    <enumeration value="CACompromise"/>
+    <enumeration value="AffiliationChanged"/>
+    <enumeration value="Superseded"/>
+    <enumeration value="CessationOfOperation"/>
+    <enumeration value="CertificateHold"/>
+    <enumeration value="RemoveFromCRL"/>
+    <enumeration value="PrivilegeWithdrawn"/>
+   </restriction>
+  </simpleType>
+  <complexType name="BinaryData">
+   <sequence>
+     <element ref="xop:Include" minOccurs="1" maxOccurs="1"/>
+   </sequence>
+   <attribute ref="xmime5:contentType" use="optional"/>
+  </complexType>
+  <complexType name="PKIStatusInfo">
+   <sequence>
+     <element name="Status" type="policynet:PKIStatus" minOccurs="1" maxOccurs="1"/>
+     <element name="FailureInfo" type="policynet:PKIFailureInfo" minOccurs="0" maxOccurs="1" nillable="true"/>
+   </sequence>
+  </complexType>
+  <complexType name="CertId">
+   <sequence>
+     <element name="Issuer" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+     <element name="SerialNumber" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+   </sequence>
+  </complexType>
+  <complexType name="SGDevice">
+   <sequence>
+     <element name="McUID" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+   </sequence>
+  </complexType>
+  <complexType name="EndEntityType">
+    <choice>
+     <element name="Device" type="policynet:SGDevice" minOccurs="0" maxOccurs="1" nillable="true"/>
+     <element name="Service" type="policynet:PNService" minOccurs="1" maxOccurs="1"/>
+    </choice>
+  </complexType>
+  <complexType name="PKCSCertificates">
+   <sequence>
+     <element name="Certificate" type="policynet:PKCS10" minOccurs="0" maxOccurs="unbounded"/>
+   </sequence>
+  </complexType>
+  <complexType name="PKCSDigitalEvenlope">
+   <sequence>
+     <element name="IV" type="policynet:Array16OfunsignedByte" minOccurs="1" maxOccurs="1" nillable="false"/>
+     <element name="EncryptedSecretKey" type="policynet:BinaryData" minOccurs="1" maxOccurs="1"/>
+     <element name="EncryptedData" type="policynet:BinaryData" minOccurs="1" maxOccurs="1"/>
+   </sequence>
+  </complexType>
+  <complexType name="CertificateSigning">
+   <sequence>
+     <element name="EndEntity" type="policynet:EndEntityType" minOccurs="1" maxOccurs="1"/>
+     <element name="CSR" type="policynet:PKCS10" minOccurs="1" maxOccurs="1"/>
+   </sequence>
+  </complexType>
+  <complexType name="CertificateConfirm">
+   <sequence>
+     <element name="CertificateId" type="policynet:CertId" minOccurs="1" maxOccurs="1"/>
+     <element name="CertificateHash" type="policynet:BinaryData" minOccurs="1" maxOccurs="1"/>
+   </sequence>
+  </complexType>
+  <complexType name="CertificateRevocation">
+   <sequence>
+     <element name="CertId" type="policynet:CertId" minOccurs="1" maxOccurs="1"/>
+     <element name="Reason" type="policynet:CRLReason" minOccurs="1" maxOccurs="1"/>
+     <element name="InvalidityDate" type="xsd:dateTime" minOccurs="1" maxOccurs="1"/>
+   </sequence>
+  </complexType>
+  <complexType name="Array16OfunsignedByte">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="xsd:unsignedByte[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+  <element name="LoginUsername" type="xsd:string"/>
+  <element name="SessionId" type="xsd:string"/>
+  <!-- operation request element -->
+  <element name="CertificateSigningRequest">
+   <complexType>
+    <sequence>
+     <element name="Request" type="policynet:CertificateSigning" minOccurs="1" maxOccurs="1"/>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="CertificateSigningResponse">
+   <complexType>
+    <sequence>
+     <element name="Status" type="policynet:PKIStatusInfo" minOccurs="1" maxOccurs="1"/>
+     <element name="ConfirmWaitTime" type="xsd:dateTime" minOccurs="0" maxOccurs="1" nillable="true"/>
+     <element name="POP" type="policynet:PKCSDigitalEvenlope" minOccurs="0" maxOccurs="1" nillable="true">
+       <annotation>
+        <documentation>Proof of the private key possession</documentation>
+       </annotation>
+     </element>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="CertificateConfirmRequest">
+   <complexType>
+    <sequence>
+     <element name="Confirm" type="policynet:CertificateConfirm" minOccurs="1" maxOccurs="1"/>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="CertificateConfirmResponse">
+   <complexType>
+    <sequence>
+     <element name="Status" type="policynet:PKIStatusInfo" minOccurs="1" maxOccurs="1"/>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="CertificateRevocationRequest">
+   <complexType>
+    <sequence>
+     <element name="SenderCertificate" type="policynet:PKCS10" minOccurs="1" maxOccurs="1"/>
+     <element name="CertRev" type="policynet:CertificateRevocation" minOccurs="1" maxOccurs="1"/>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="CertificateRevocationResponse">
+   <complexType>
+    <sequence>
+     <element name="Status" type="policynet:PKIStatusInfo" minOccurs="1" maxOccurs="1"/>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="CertificateRevocationListRequest">
+   <complexType>
+    <sequence>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="CertificateRevocationListResponse">
+   <complexType>
+    <sequence>
+     <element name="Status" type="policynet:PKIStatusInfo" minOccurs="1" maxOccurs="1"/>
+     <element name="CRL" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/>
+    </sequence>
+   </complexType>
+  </element>
+ </schema>
+
+</types>
+
+<message name="CertificateSigningRequest">
+ <part name="parameters" element="policynet:CertificateSigningRequest"/>
+</message>
+
+<message name="CertificateSigningResponse">
+ <part name="parameters" element="policynet:CertificateSigningResponse"/>
+</message>
+
+<message name="CertificateConfirmRequest">
+ <part name="parameters" element="policynet:CertificateConfirmRequest"/>
+</message>
+
+<message name="CertificateConfirmResponse">
+ <part name="parameters" element="policynet:CertificateConfirmResponse"/>
+</message>
+
+<message name="CertificateRevocationRequest">
+ <part name="parameters" element="policynet:CertificateRevocationRequest"/>
+</message>
+
+<message name="CertificateRevocationResponse">
+ <part name="parameters" element="policynet:CertificateRevocationResponse"/>
+</message>
+
+<message name="CertificateRevocationListRequest">
+ <part name="parameters" element="policynet:CertificateRevocationListRequest"/>
+</message>
+
+<message name="CertificateRevocationListResponse">
+ <part name="parameters" element="policynet:CertificateRevocationListResponse"/>
+</message>
+
+<message name="PolicyNetCAHeader">
+ <part name="LoginUsername" element="policynet:LoginUsername"/>
+ <part name="SessionId" element="policynet:SessionId"/>
+</message>
+
+<portType name="PolicyNetCAPortType">
+ <operation name="CertificateSigning">
+  <documentation>Service definition of function policynet__CertificateSigningRequest</documentation>
+  <input message="tns:CertificateSigningRequest"/>
+  <output message="tns:CertificateSigningResponse"/>
+ </operation>
+ <operation name="CertificateConfirm">
+  <documentation>Service definition of function policynet__CertificateConfirmRequest</documentation>
+  <input message="tns:CertificateConfirmRequest"/>
+  <output message="tns:CertificateConfirmResponse"/>
+ </operation>
+ <operation name="CertificateRevocation">
+  <documentation>Service definition of function policynet__CertificateRevocationRequest</documentation>
+  <input message="tns:CertificateRevocationRequest"/>
+  <output message="tns:CertificateRevocationResponse"/>
+ </operation>
+ <operation name="CertificateRevocationList">
+  <documentation>Service definition of function policynet__CertificateRevocationListRequest</documentation>
+  <input message="tns:CertificateRevocationListRequest"/>
+  <output message="tns:CertificateRevocationListResponse"/>
+ </operation>
+</portType>
+
+<binding name="PolicyNetCA" type="tns:PolicyNetCAPortType">
+ <SOAP:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+ <operation name="CertificateSigning">
+  <SOAP:operation soapAction="CertificateSigning"/>
+  <input>
+     <SOAP:body parts="parameters" use="literal"/>
+     <SOAP:header use="literal" message="tns:PolicyNetCAHeader" part="LoginUsername"/>
+  </input>
+  <output>
+     <SOAP:body parts="parameters" use="literal"/>
+     <SOAP:header use="literal" message="tns:PolicyNetCAHeader" part="LoginUsername"/>
+  </output>
+ </operation>
+ <operation name="CertificateConfirm">
+  <SOAP:operation soapAction="CertificateConfirm"/>
+  <input>
+     <SOAP:body parts="parameters" use="literal"/>
+     <SOAP:header use="literal" message="tns:PolicyNetCAHeader" part="LoginUsername"/>
+  </input>
+  <output>
+     <SOAP:body parts="parameters" use="literal"/>
+     <SOAP:header use="literal" message="tns:PolicyNetCAHeader" part="LoginUsername"/>
+  </output>
+ </operation>
+ <operation name="CertificateRevocation">
+  <SOAP:operation soapAction="CertificateRevocation"/>
+  <input>
+     <SOAP:body parts="parameters" use="literal"/>
+     <SOAP:header use="literal" message="tns:PolicyNetCAHeader" part="LoginUsername"/>
+  </input>
+  <output>
+     <SOAP:body parts="parameters" use="literal"/>
+     <SOAP:header use="literal" message="tns:PolicyNetCAHeader" part="LoginUsername"/>
+  </output>
+ </operation>
+ <operation name="CertificateRevocationList">
+  <SOAP:operation soapAction="CertificateRevocationList"/>
+  <input>
+     <SOAP:body parts="parameters" use="literal"/>
+     <SOAP:header use="literal" message="tns:PolicyNetCAHeader" part="LoginUsername"/>
+  </input>
+  <output>
+     <SOAP:body parts="parameters" use="literal"/>
+     <SOAP:header use="literal" message="tns:PolicyNetCAHeader" part="LoginUsername"/>
+  </output>
+ </operation>
+</binding>
+
+<service name="PolicyNetCA">
+ <documentation>GRID NET, INC. CONFIDENTIAL <p />The source code contained or described herein and all documents related to the source code ("Material") are owned by Grid Net, Inc. or its suppliers or licensors. Title to the Material remains with Grid Net or its suppliers and licensors. The Material contains trade secrets and proprietary and confidential information of Grid Net or its suppliers and licensors. The Material is protected by worldwide copyright and trade secret laws and treaty provisions. No part of the Material may be used, copied, reproduced, modified, published, uploaded, posted, transmitted, distributed, or disclosed in any way without the prior express written permission of Grid Net, Inc.  No license under any patent, copyright, trade secret or other intellectual property right is granted to or conferred upon you by disclosure or delivery of the Material, either expressly, by implication, inducement, estoppel or otherwise. Any license under such intellectual property rights must be express and approved by Grid Net, Inc. in writing.<p />  Copyright (c) 2006-2010 Grid Net, Inc.  All Rights Reserved.</documentation>
+ <port name="PolicyNetCA" binding="tns:PolicyNetCA">
+  <SOAP:address location="http://localhost:80"/>
+ </port>
+</service>
+
+</definitions>

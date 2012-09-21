@@ -1,0 +1,10 @@
+exe run.x
+  : itppVecOfUserDefinedClass.cpp
+    /home/a0871095/opteronPort/itpp-3.99.0/lib/libitpp.so
+    /home/a0871095/opteronPort/itpp-external-2.3.0/lib/libfftw3.so
+    /home/a0871095/opteronPort/itpp-external-2.3.0/lib/libcblas.so
+    /home/a0871095/opteronPort/itpp-external-2.3.0/lib/libblas.so
+    /home/a0871095/opteronPort/itpp-external-2.3.0/lib/liblapack.so
+  : <include>/home/a0871095/opteronPort/itpp-3.99.0/include
+    <include>/home/a0871095/opteronPort/itpp-3.99.0/include/itpp
+  ;

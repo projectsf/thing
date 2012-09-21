@@ -1,0 +1,11 @@
+<ApplicationIdentifier>MeterBillingDataReader-v.0.1</ApplicationIdentifier>
+<MessageType>ApplicationMessagePayload</MessageType>
+<ApplicationPayload>
+	<InstanceIdentifier>2</InstanceIdentifier>
+	<Schedule>
+		<Periodic>
+			<Period>5</Period>
+			<Units>Seconds</Units>
+		</Periodic>
+	</Schedule>
+</ApplicationPayload>
