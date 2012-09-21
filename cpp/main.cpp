@@ -11,6 +11,7 @@ using namespace std;
 int main()
 {
 
+
 #ifdef PRINT_ONE
 	cout << "1" << endl;
 #endif
