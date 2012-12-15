@@ -1,21 +1,20 @@
-import java.util.ArrayList;
+import java.util.concurrent.LinkedBlockingQueue;
 
-//scoped lock java?
+//is linkedblockingqueue include synchronization?
 
 public class CommandProcessor extends Thread implements Cloneable {
-	ArrayList<String> messages;
+	private LinkedBlockingQueue<String> messages;
 	
 	public CommandProcessor() {
-		messages = new ArrayList();
+		messages = new LinkedBlockingQueue<String>();
 	}
 
 	//this has to be synchronized as well
-	public synchronized void run() {
+	public void run() {
 		while(true) {
 			try {
-				System.out.println("waiting");
-				wait();
-				System.out.println("received new message");
+				String message = messages.take();
+				System.out.println("Processing message: "+message);
 			} 
 			catch (InterruptedException e) {
 				System.out.println("interrupted");
@@ -24,10 +23,8 @@ public class CommandProcessor extends Thread implements Cloneable {
 	}
 
 	//this has to be synchronized if we end up making server multithreaded
-	public synchronized void dispatch(String message) {
-		messages.add(message);
-		System.out.println("messages size: "+messages.size());
-		notifyAll();
+	public void dispatch(String message) {
+		messages.offer(message);
 	}
 
 	

@@ -1,17 +1,15 @@
 import java.net.*;
-import java.util.ArrayList;
 import java.nio.*;
 import java.io.*;
 
 
 public class CommandListener extends Thread {
-	ArrayList<String> messages;
-	ServerSocket serverSocket;
+	private ServerSocket serverSocket;
 	private CommandProcessor commandProcessor;
 	
-	public CommandListener(CommandProcessor _commandProcessor) {
+	public CommandListener(CommandProcessor commandProcessor) {
 
-		commandProcessor = _commandProcessor.clone();
+		this.commandProcessor = commandProcessor;
 
 		//initialize server socket
 		int port = 35000;
@@ -50,9 +48,7 @@ public class CommandListener extends Thread {
 			}
 
 			//convert byte buffer to string
-			byte[] bytearray = new byte[buffer.remaining()];
-			buffer.get(bytearray);
-			String message = new String(bytearray); 
+			String message = new String(buffer.array());
 			commandProcessor.dispatch(message);
 		
 		}
