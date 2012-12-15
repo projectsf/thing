@@ -4,8 +4,12 @@ public class Thing {
 		System.out.println("Thing says hello");
 
 		//start command processor
-		Thread commandProcessor = new CommandProcessor();
+		CommandProcessor commandProcessor = new CommandProcessor();
 		commandProcessor.start();
+
+		//start command listener 
+		CommandListener commandListener = new CommandListener(commandProcessor);
+		commandListener.start();
 
 		//wait for command processor to join
 		try {

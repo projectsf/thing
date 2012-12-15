@@ -1,4 +1,4 @@
-SOURCES=./src/Thing.java ./src/CommandProcessor.java
+SOURCES=./src/Thing.java ./src/CommandProcessor.java ./src/CommandListener.java
 OUTPUTNAME=./Thing
 
 
