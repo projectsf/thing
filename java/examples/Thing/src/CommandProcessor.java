@@ -24,7 +24,11 @@ public class CommandProcessor extends Thread implements Cloneable {
 
 	//this has to be synchronized if we end up making server multithreaded
 	public void dispatch(String message) {
-		messages.offer(message);
+		try {
+			messages.put(message);
+		}
+		catch (InterruptedException e) {
+		}
 	}
 
 	

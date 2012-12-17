@@ -1,3 +1,8 @@
+/* to do */
+  -- add command factor and dispatch
+  -- add signal handling at top (SIGINT/SIGTERM(ctrl-c))
+  -- 
+
 /* what are components
   -- identity manager 
     -- collects and posts identity, capability and configuration) to management platform
@@ -9,7 +14,6 @@
 /* other things
   -- command factory
 
-
 /* command invocation pattern */
   -- command pattern
 
@@ -20,7 +24,6 @@
   -- curl can be used to test http
     -- curl -X PUT -d "something=blabla&somethingelse=blaha" http://www.example.com
   -- netcat required for socket
-
 
 /* management platform web services */
   -- this should be REST (http) 
