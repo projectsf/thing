@@ -1,7 +1,12 @@
-
 public class Thing {
+
 	public static void main (String args[]) {
-		System.out.println("Thing says hello");
+		//load all commands
+		try {
+			Class.forName("MoveServoCommand");
+		}
+		catch (ClassNotFoundException e) {
+		}
 
 		//start command processor
 		CommandProcessor commandProcessor = new CommandProcessor();
@@ -10,6 +15,7 @@ public class Thing {
 		//start command listener 
 		CommandListener commandListener = new CommandListener(commandProcessor);
 		commandListener.start();
+
 
 		//wait for command processor to join
 		try {

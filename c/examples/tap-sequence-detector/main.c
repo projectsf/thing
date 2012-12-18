@@ -3,8 +3,6 @@
 #include "TapSimulator.h"
 #include "TapProcessor.h"
 
-//comments
-// can I put tapiniated and tapinactivated in another compilation unit
 
 int main()
 {

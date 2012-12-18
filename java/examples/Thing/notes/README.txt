@@ -1,7 +1,10 @@
 /* to do */
-  -- add command factor and dispatch
+  -- define message set and xsd
+  -- add command factory, and command pattern implementation
+    -- commands will result in file writes for now
+  -- how to dynamically load components and start them (like bootstrap manager)
+  -- add security 
   -- add signal handling at top (SIGINT/SIGTERM(ctrl-c))
-  -- 
 
 /* what are components
   -- identity manager 
@@ -11,11 +14,6 @@
     -- receives commands, verifies them, decrypts them, builds concret command object from factory
     -- invokes command 
 
-/* other things
-  -- command factory
-
-/* command invocation pattern */
-  -- command pattern
 
 /* http web server or socket */
   -- http server will teach me more about REST (vs SOAP)

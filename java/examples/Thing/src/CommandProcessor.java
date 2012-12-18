@@ -14,11 +14,23 @@ public class CommandProcessor extends Thread implements Cloneable {
 		while(true) {
 			try {
 				String message = messages.take();
+
 				System.out.println("Processing message: "+message);
+
+				//message is simply identifier at this point
+				//build command object from it and run
+				Command command = CommandFactory.instance().create(message);
+
+				//try to run it
+				command.run();
+			
 			} 
 			catch (InterruptedException e) {
 				System.out.println("interrupted");
 			}
+
+
+
 		}
 	}
 

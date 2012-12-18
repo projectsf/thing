@@ -2,7 +2,7 @@
 #include <string.h>
 
 
-void reverseString(char* str)
+void reverseStringWithTempString(char* str)
 {
 	int length = strlen(str);
 	char temp[length+1]; 
@@ -10,18 +10,32 @@ void reverseString(char* str)
 	//copy string backwards to temp
 	for (int ii = (length - 1); ii >= 0 ; --ii)
 	{
-		printf("i1: %d, i2: %d\n", (length-ii-1), ii);
 		temp[length-ii-1] = str[ii];
 	}
 
 	strncpy(str, temp, length);
 }
 
+void reverseStringInPlace(char* str)
+{
+	int length = strlen(str);
+
+	//copy string backwards to temp
+	for (int ii = 0; ii < length/2 ; ++ii)
+	{
+		char swap = str[ii];
+		str[ii] = str[length-ii-1];
+		str[length-ii-1] = swap;
+	}
+}
+
 int main()
 {
 	char string[] = "reverseme";
+	printf("Original string: %s\n", string);
 
-	reverseString(string);
+	reverseStringInPlace(string);
 
-	printf("%s\n", string);
+	printf("Reversed string: %s\n", string);
+
 }

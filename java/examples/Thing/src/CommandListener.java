@@ -16,7 +16,7 @@ public class CommandListener extends Thread {
 
 		try {
 			serverSocket = new ServerSocket(port);
-			System.out.println("Listening on port: "+port);
+			System.out.println("CommandListener listening on port: " + port);
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -43,12 +43,14 @@ public class CommandListener extends Thread {
 			//how to read input stream indefinitely
 			int value;
 			ByteBuffer buffer = ByteBuffer.allocate(4092);
+			int count = 0;
 			while ((value = socketInputStream.read()) != 0) {
-				buffer.putInt((char)value);
+				buffer.put((byte)value);
+				count++;
 			}
 
 			//convert byte buffer to string
-			String message = new String(buffer.array());
+			String message = new String(buffer.array(), 0, count);
 			commandProcessor.dispatch(message);
 		
 		}
