@@ -2,11 +2,21 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 //is linkedblockingqueue include synchronization?
 
-public class CommandProcessor extends Thread implements Cloneable {
+public class CommandProcessor extends Component implements Runnable {
 	private LinkedBlockingQueue<String> messages;
 	
 	public CommandProcessor() {
 		messages = new LinkedBlockingQueue<String>();
+	}
+
+	public void start()
+	{
+		(new Thread(this)).start();
+	}
+
+	public void stop()
+	{
+		System.out.println("Not implemented");
 	}
 
 	//this has to be synchronized as well
@@ -28,9 +38,6 @@ public class CommandProcessor extends Thread implements Cloneable {
 			catch (InterruptedException e) {
 				System.out.println("interrupted");
 			}
-
-
-
 		}
 	}
 

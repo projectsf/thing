@@ -3,14 +3,26 @@ import java.nio.*;
 import java.io.*;
 
 
-public class CommandListener extends Thread {
+public class CommandListener extends Component implements Runnable {
 	private ServerSocket serverSocket;
 	private CommandProcessor commandProcessor;
 	
 	public CommandListener(CommandProcessor commandProcessor) {
-
 		this.commandProcessor = commandProcessor;
+	}
 
+	public void start()
+	{
+		(new Thread(this)).start();
+	}
+
+	public void stop()
+	{
+		System.out.println("Not implemented");
+	}
+
+	//this has to be synchronized as well
+	public void run() {
 		//initialize server socket
 		int port = 35000;
 
@@ -21,11 +33,6 @@ public class CommandListener extends Thread {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-
-	//this has to be synchronized as well
-	public void run() {
-		//start up listening socket
 
 		while (true)
 		{

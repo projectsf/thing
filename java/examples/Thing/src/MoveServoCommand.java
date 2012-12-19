@@ -1,6 +1,6 @@
 public class MoveServoCommand extends Command {
     static {
-        CommandFactory.instance().register("MoveServoCommand", new MoveServoCommand());
+        CommandFactory.register("MoveServoCommand", new MoveServoCommand());
     }
 
 	public void run() {

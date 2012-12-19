@@ -1,7 +1,6 @@
 import java.util.logging.*;
 
 public class ThingLogger {
-	private final static Logger logger = Logger.getLogger(ThingLogger.class.getName());
 	private static FileHandler fileHandler = null;
  
 	public static void init() {
