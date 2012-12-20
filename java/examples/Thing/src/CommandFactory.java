@@ -2,7 +2,7 @@ package com.slashthings.common;
 import java.util.HashMap;
 
 public class CommandFactory {
-	private static HashMap<String, Command> commandFactories = new HashMap<String, Command>();
+	private static HashMap<String, Command> commandFactories = new HashMap<String, Command>(10);
 	private static CommandFactory instance = null;
 
 	public static void register(String commandIdentifier, Command command)
