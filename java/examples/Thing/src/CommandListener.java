@@ -1,7 +1,7 @@
+package com.slashthings.common;
 import java.net.*;
 import java.nio.*;
 import java.io.*;
-
 
 public class CommandListener extends Component implements Runnable {
 	private ServerSocket serverSocket;

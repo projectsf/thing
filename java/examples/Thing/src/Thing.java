@@ -1,3 +1,4 @@
+import com.slashthings.common.ComponentManager;
 public class Thing {
 
 	public static void main (String args[]) {
@@ -5,5 +6,10 @@ public class Thing {
 		//start component manager
 		ComponentManager componentManager = new ComponentManager();
 		componentManager.start();
+
+		//wait for ever for now
+		while(true) {
+		}
+
 	}
 }

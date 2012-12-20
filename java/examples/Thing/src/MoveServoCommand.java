@@ -1,3 +1,4 @@
+package com.slashthings.common;
 public class MoveServoCommand extends Command {
     static {
         CommandFactory.register("MoveServoCommand", new MoveServoCommand());

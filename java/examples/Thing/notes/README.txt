@@ -1,21 +1,25 @@
-/* to do */
+/* thing to do */
   x define one command (message) MoveServoCommand
   x add command factory, and command pattern implementation
+  -- add package names, review code, 
+  -- add component manager 
+    -- read configuration from file
+    -- needs to be a class loader
+    -- needs to support class reload
+  -- add signal support and component stop / shutdown hook
   -- add logging support (logging manager?)
-  -- convert message to xml and add xml parsing
-  -- command run() should look at xml payload
-  -- add serialization to commands
-  -- what else?
-    -- add digital signature, encryption?
-    -- add SSL or TLS?
-    -- write server app? 
-  
+  -- add serialization to commands (to/from xml)
+  -- add xml validation
+  -- add security 
+    -- generate key pair and add to secure key store
+    -- listening socket is TLS
+  -- add componentupgrade command
+    -- <Commmand>ComponentUpgrade</Command><ComponentName>ComponentName</ComponentName><JarFile>binary</JarFile><AlgorithmDetails>False</IsSigned><IsEncrypted>False</IsEncrypted>
 
-/* nice to have */
-  -- add signal handling at top (SIGINT/SIGTERM(ctrl-c))
-
-/* design questions */
-  -- how to dynamically load components and start them (like bootstrap manager)
+/* thing manager to do */
+  -- get ec2 account
+  -- research putting app on cloud
+  -- implement
 
 
 /* java questions */

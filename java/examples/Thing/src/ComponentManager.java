@@ -1,3 +1,4 @@
+package com.slashthings.common;
 import java.util.HashMap;
 
 public class ComponentManager {
@@ -23,5 +24,9 @@ public class ComponentManager {
 			System.out.println("Starting: " + entry.getKey());
 			entry.getValue().start();
 		}
+	}
+
+	public void upgrade(String componentName)
+	{
 	}
 }

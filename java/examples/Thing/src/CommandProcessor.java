@@ -1,6 +1,5 @@
+package com.slashthings.common;
 import java.util.concurrent.LinkedBlockingQueue;
-
-//is linkedblockingqueue include synchronization?
 
 public class CommandProcessor extends Component implements Runnable {
 	private LinkedBlockingQueue<String> messages;
