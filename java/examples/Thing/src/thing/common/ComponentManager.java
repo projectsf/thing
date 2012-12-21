@@ -14,27 +14,11 @@ public class ComponentManager {
 			System.out.println("MoveServoCommand not found");
 		}             
 
-        CustomClassLoader classLoader = new CustomClassLoader();
-		try {
-        	Class<?> aClass = classLoader.loadClass("thing.common.CommandProcessor");
-			CommandProcessor commandProcessor = (CommandProcessor)aClass.newInstance();
-			components.put("CommandProcessor", commandProcessor);
+		CommandProcessor commandProcessor = new CommandProcessor();
+		components.put("CommandProcessor", commandProcessor);
 
-			//hard code this for now until i figure out how to pass in args to custom ctor
-			components.put("CommandListener", new CommandListener(commandProcessor));
-		}
-		catch (ClassNotFoundException e) {
-			System.out.println("Not found suckas");
-		}
-		catch (InstantiationException e) {
-			System.out.println("Can't instantiate");
-		}
-		catch (IllegalAccessException e) {
-			System.out.println("illegal access");
-		}
-		catch (ClassCastException e) {
-			System.out.println("class cast exception: " + e);
-		}
+		//hard code this for now until i figure out how to pass in args to custom ctor
+		components.put("CommandListener", new CommandListener(commandProcessor));
 
 		//start all components in container
 		for (HashMap.Entry<String, Component> entry : components.entrySet())
