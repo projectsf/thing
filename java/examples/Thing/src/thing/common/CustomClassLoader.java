@@ -3,7 +3,6 @@ import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Enumeration;
 import java.util.Hashtable;
 
 public class CustomClassLoader extends ClassLoader {
@@ -11,26 +10,23 @@ public class CustomClassLoader extends ClassLoader {
         super(CustomClassLoader.class.getClassLoader());
     }
   
-    public Class loadClass(String className) throws ClassNotFoundException {
+    public Class<?> loadClass(String className) throws ClassNotFoundException {
          return findClass(className);
     }
  
-    public Class findClass(String className){
+    public Class<?> findClass(String className){
         byte classByte[];
-        Class result = null;
-        result = (Class)classes.get(className);
+        Class<?> result = null;
+        result = (Class<?>)classes.get(className);
         if(result != null){
-			System.out.println("here1");
             return result;
         }
         
         try{
-			System.out.println("here2");
             return findSystemClass(className);
         }catch(Exception e){
         }
         try{
-			System.out.println("here3");
            String classPath = ((String)ClassLoader.getSystemResource(className.replace('.',File.separatorChar)+".class").getFile()).substring(1);
            classByte = loadClassData(classPath);
             result = defineClass(className,classByte,0,classByte.length,null);
@@ -54,5 +50,5 @@ public class CustomClassLoader extends ClassLoader {
         return buff;
     }
  
-    private Hashtable classes = new Hashtable();
+    private Hashtable<String, Class<?> > classes = new Hashtable<String, Class<?> >();
 }

@@ -6,7 +6,6 @@
     <property name="jar.dir"     value="${build.dir}/jar"/>
     <property name="main-class"  value="Thing"/>
 
-
     <target name="clean">
         <delete dir="${build.dir}"/>
     </target>

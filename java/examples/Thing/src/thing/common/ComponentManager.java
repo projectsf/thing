@@ -16,7 +16,7 @@ public class ComponentManager {
 
         CustomClassLoader classLoader = new CustomClassLoader();
 		try {
-        	Class aClass = classLoader.loadClass("thing.common.CommandProcessor");
+        	Class<?> aClass = classLoader.loadClass("thing.common.CommandProcessor");
 			CommandProcessor commandProcessor = (CommandProcessor)aClass.newInstance();
 			components.put("CommandProcessor", commandProcessor);
 
