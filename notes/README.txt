@@ -32,10 +32,6 @@
   -- research putting app on cloud
   -- implement
 
-
-
-/* java questions */
-
 /* what are components
   -- identity manager 
     -- collects and posts identity, capability and configuration) to management platform
