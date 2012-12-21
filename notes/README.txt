@@ -44,7 +44,6 @@
     -- receives commands, verifies them, decrypts them, builds concret command object from factory
     -- invokes command 
 
-
 /* http web server or socket */
   -- http server will teach me more about REST (vs SOAP)
     -- GET, PUT, POST, DELETE
