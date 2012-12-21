@@ -2,10 +2,15 @@
   x define one command (message) MoveServoCommand
   x add command factory, and command pattern implementation
   x add package names
-  -- add component manager 
-    -- read configuration from file
-  -- add logging support (logging manager?)
-  -- add signal support and component stop / shutdown hook
+  x add component manager 
+    x read configuration from file
+    x add getComponent functionality
+  -- add logging support 
+  -- code review / beautify
+    -- do i need getComponent()?
+    -- xml parsing cleanup
+    -- add exceptions
+    -- package names?
   -- add serialization to commands (to/from xml)
   -- add xml validation
   -- add security 
@@ -16,10 +21,15 @@
     -- use URL class loader
     -- needs to support class reload
 
+/* thing nice to haves */
+  -- signal handling at top level
+
 /* thing manager to do */
   -- get ec2 account
   -- research putting app on cloud
   -- implement
+
+
 
 /* java questions */
 

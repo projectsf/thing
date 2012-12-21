@@ -5,10 +5,8 @@ import java.io.*;
 
 public class CommandListener extends Component implements Runnable {
 	private ServerSocket serverSocket;
-	private CommandProcessor commandProcessor;
 	
-	public CommandListener(CommandProcessor commandProcessor) {
-		this.commandProcessor = commandProcessor;
+	public CommandListener() {
 	}
 
 	public void start()
@@ -58,7 +56,18 @@ public class CommandListener extends Component implements Runnable {
 
 			//convert byte buffer to string
 			String message = new String(buffer.array(), 0, count);
-			commandProcessor.dispatch(message);
+
+			//get component from component manager
+			String commandProcessorName = "thing.common.CommandProcessor";
+			try {
+				CommandProcessor commandProcessor = (CommandProcessor)ComponentManager.getComponent(commandProcessorName);
+				commandProcessor.dispatch(message);
+
+			}
+			catch (Exception e) {
+				System.out.println("Unable to get: " + commandProcessorName + " from ComponentManager");
+				e.printStackTrace();
+			}
 		
 		}
 		catch (Exception e) {
