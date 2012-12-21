@@ -1,9 +1,0 @@
-exe run.x
-  : itppVecOfUserDefinedClass.cpp
-    /apps/free/it++/itpp-3.10.0/usrlocal/lib/libitpp.a
-    /apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libfftw3.a
-    /apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libcblas.a
-    /apps/free/it++/itpp-external-2.1.1/usrlocal/lib/libblas.a
-    /apps/free/it++/itpp-external-2.1.1/usrlocal/lib/liblapack.a
-  : <include>/apps/free/it++/itpp-3.10.0/usrlocal/include
-  ;

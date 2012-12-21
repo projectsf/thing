@@ -1,8 +1,0 @@
-exe run.x 
-  : boostThreadsExample.cpp /apps/free/boost/boost-1.33.1/lib/libboost_thread-gcc-mt-1_33_1.a
-  : <include>/apps/free/boost/boost-1.33.1 <threading>multi
-  ;
-
-install dist
-  : run.x
-  : <location>./ <install-type>EXE ;

@@ -1,4 +1,4 @@
-/* thing to do */
+/*  thing::core to do */
   x define one command (message) MoveServoCommand
   x add command factory, and command pattern implementation
   x add package names
@@ -10,9 +10,10 @@
     -- do i need getComponent()?
     -- xml parsing cleanup
     -- add exceptions
-    -- package names?
+    -- package names? replace common with core
   -- add serialization to commands (to/from xml)
-  -- add xml validation
+  -- add identity, capability, configuration reporting
+    -- components are queried -- when?
   -- add security 
     -- generate key pair and add to secure key store
     -- listening socket is TLS
@@ -23,6 +24,8 @@
 
 /* thing nice to haves */
   -- signal handling at top level
+  -- add xml validation
+  -- certificate is signed on button press
 
 /* thing manager to do */
   -- get ec2 account

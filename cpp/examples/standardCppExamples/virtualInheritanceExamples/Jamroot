@@ -1,3 +1,0 @@
-exe run.x 
-  : virtualInheritanceExample.cpp Base.cpp DerivedOne.cpp DerivedTwo.cpp Join.cpp
-  ;

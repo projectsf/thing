@@ -1,5 +1,0 @@
-exe run.x
-  : port_sc_main.cpp  /home/a0871095/opteronPort/systemc/systemc-2.2.05jun06_beta/lib-linux64/libsystemc.a 
-  : <include>/home/a0871095/opteronPort/systemc/systemc-2.2.05jun06_beta/include  <include>./
-  : <linkflags>-lpthread
-  ;
