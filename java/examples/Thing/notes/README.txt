@@ -1,13 +1,11 @@
 /* thing to do */
   x define one command (message) MoveServoCommand
   x add command factory, and command pattern implementation
-  -- add package names, review code, 
+  x add package names
   -- add component manager 
     -- read configuration from file
-    -- needs to be a class loader
-    -- needs to support class reload
-  -- add signal support and component stop / shutdown hook
   -- add logging support (logging manager?)
+  -- add signal support and component stop / shutdown hook
   -- add serialization to commands (to/from xml)
   -- add xml validation
   -- add security 
@@ -15,12 +13,13 @@
     -- listening socket is TLS
   -- add componentupgrade command
     -- <Commmand>ComponentUpgrade</Command><ComponentName>ComponentName</ComponentName><JarFile>binary</JarFile><AlgorithmDetails>False</IsSigned><IsEncrypted>False</IsEncrypted>
+    -- use URL class loader
+    -- needs to support class reload
 
 /* thing manager to do */
   -- get ec2 account
   -- research putting app on cloud
   -- implement
-
 
 /* java questions */
 
