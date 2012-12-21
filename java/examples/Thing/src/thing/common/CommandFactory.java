@@ -1,4 +1,4 @@
-package com.slashthings.common;
+package thing.common;
 import java.util.HashMap;
 
 public class CommandFactory {

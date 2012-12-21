@@ -1,4 +1,4 @@
-import com.slashthings.common.ComponentManager;
+import thing.common.ComponentManager;
 public class Thing {
 
 	public static void main (String args[]) {

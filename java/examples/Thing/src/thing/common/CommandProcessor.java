@@ -1,4 +1,4 @@
-package com.slashthings.common;
+package thing.common;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class CommandProcessor extends Component implements Runnable {

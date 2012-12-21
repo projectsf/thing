@@ -1,4 +1,4 @@
-package com.slashthings.common;
+package thing.common;
 import java.util.HashMap;
 
 public class ComponentManager {
@@ -8,7 +8,7 @@ public class ComponentManager {
 	{
 		//load all commands in here for now
 		try {
-			Class.forName("com.slashthings.common.MoveServoCommand");
+			Class.forName("thing.common.MoveServoCommand");
 		}
 		catch (ClassNotFoundException e) {
 			System.out.println("MoveServoCommand not found");
@@ -16,7 +16,7 @@ public class ComponentManager {
 
         CustomClassLoader classLoader = new CustomClassLoader();
 		try {
-        	Class aClass = classLoader.loadClass("com.slashthings.common.CommandProcessor");
+        	Class aClass = classLoader.loadClass("thing.common.CommandProcessor");
 			CommandProcessor commandProcessor = (CommandProcessor)aClass.newInstance();
 			components.put("CommandProcessor", commandProcessor);
 
@@ -31,6 +31,9 @@ public class ComponentManager {
 		}
 		catch (IllegalAccessException e) {
 			System.out.println("illegal access");
+		}
+		catch (ClassCastException e) {
+			System.out.println("class cast exception: " + e);
 		}
 
 		//start all components in container
