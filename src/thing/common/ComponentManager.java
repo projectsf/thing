@@ -1,4 +1,5 @@
 package thing.common;
+import java.util.Map;
 import java.util.HashMap;
 import java.util.ArrayList;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -45,7 +46,7 @@ public class ComponentManager {
 		}             
 
 		//start all components in container
-		for (HashMap.Entry<String, Object> entry : components.entrySet())
+		for (Map.Entry<String, Object> entry : components.entrySet())
 		{
 			System.out.println("Starting: " + entry.getKey());
 			Component component = (Component)entry.getValue();
