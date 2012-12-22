@@ -9,20 +9,25 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 import java.io.File;
+import java.util.logging.*;
 
 
 public class ComponentManager {
 	private static HashMap<String, Object> components = new HashMap<String, Object>();
 	private ArrayList<String> componentNames = new ArrayList<String>();
+    private static final Logger log = Logger.getLogger(ComponentManager.class.getName());
 
 	public void start()
 	{
+
+		log.info("Starting");
+
 		//load all commands in here for now
 		try {
 			Class.forName("thing.common.MoveServoCommand");
 		}
 		catch (ClassNotFoundException e) {
-			System.out.println("MoveServoCommand not found");
+			log.warning("MoveServoCommand.class not found");
 		}             
 
 		//read in component list from file
@@ -35,20 +40,20 @@ public class ComponentManager {
 				components.put(entry.trim(), componentClass.newInstance());
 			}
 			catch (ClassNotFoundException e) {
-				System.out.println(entry + " not found");
+				log.warning(entry + " not found");
 			}
 			catch (InstantiationException e) {
-				System.out.println(entry + " can't be instantiated");
+				log.warning(entry + " can't be instantiated");
 			}
 			catch (IllegalAccessException e) {
-				System.out.println(entry + " can't be accesses");
+				log.warning(entry + " can't be accesses");
 			}
 		}             
 
 		//start all components in container
 		for (Map.Entry<String, Object> entry : components.entrySet())
 		{
-			System.out.println("Starting: " + entry.getKey());
+			log.info("Starting: " + entry.getKey());
 			Component component = (Component)entry.getValue();
 			component.start();
 		}
@@ -84,7 +89,7 @@ public class ComponentManager {
 			}
 		}
 		catch (Exception e) {
-			e.printStackTrace();
+			log.severe(e.getMessage());
 		}
 	}
 

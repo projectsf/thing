@@ -2,9 +2,11 @@ package thing.common;
 import java.net.*;
 import java.nio.*;
 import java.io.*;
+import java.util.logging.*;
 
 public class CommandListener extends Component implements Runnable {
 	private ServerSocket serverSocket;
+	private static final Logger log = Logger.getLogger(CommandListener.class.getName());
 	
 	public CommandListener() {
 	}
@@ -16,7 +18,7 @@ public class CommandListener extends Component implements Runnable {
 
 	public void stop()
 	{
-		System.out.println("Not implemented");
+		log.warning("Not implemented");
 	}
 
 	//this has to be synchronized as well
@@ -26,10 +28,10 @@ public class CommandListener extends Component implements Runnable {
 
 		try {
 			serverSocket = new ServerSocket(port);
-			System.out.println("CommandListener listening on port: " + port);
+			log.info("CommandListener listening on port: " + port);
 		}
 		catch (Exception e) {
-			e.printStackTrace();
+			log.severe(e.getMessage());
 		}
 
 		while (true)
@@ -65,13 +67,12 @@ public class CommandListener extends Component implements Runnable {
 
 			}
 			catch (Exception e) {
-				System.out.println("Unable to get: " + commandProcessorName + " from ComponentManager");
-				e.printStackTrace();
+				log.severe(e.getMessage());
 			}
 		
 		}
 		catch (Exception e) {
-			e.printStackTrace();
+			log.severe(e.getMessage());
 		}
 	}
 }

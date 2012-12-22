@@ -1,8 +1,10 @@
 package thing.common;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.logging.*;
 
 public class CommandProcessor extends Component implements Runnable {
 	private LinkedBlockingQueue<String> messages;
+    private static final Logger log = Logger.getLogger(CommandProcessor.class.getName());
 	
 	public CommandProcessor() {
 		messages = new LinkedBlockingQueue<String>();
@@ -15,7 +17,7 @@ public class CommandProcessor extends Component implements Runnable {
 
 	public void stop()
 	{
-		System.out.println("Not implemented");
+		log.warning("Not implemented");
 	}
 
 	//this has to be synchronized as well
@@ -24,7 +26,7 @@ public class CommandProcessor extends Component implements Runnable {
 			try {
 				String message = messages.take();
 
-				System.out.println("Processing message: "+message);
+				log.fine("Processing message: "+message);
 
 				//message is simply identifier at this point
 				//build command object from it and run
@@ -35,7 +37,7 @@ public class CommandProcessor extends Component implements Runnable {
 			
 			} 
 			catch (InterruptedException e) {
-				System.out.println("interrupted");
+				log.fine("interrupted");
 			}
 		}
 	}
