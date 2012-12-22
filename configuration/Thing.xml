@@ -1,0 +1,10 @@
+<Components>
+	<Component>
+		<Classname>thing.common.CommandListener</Classname>
+			<Configuration></Configuration>
+	</Component>
+	<Component>
+		<Classname>thing.common.CommandProcessor</Classname>
+			<Configuration></Configuration>
+	</Component>
+</Components>
